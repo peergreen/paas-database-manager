@@ -22,7 +22,7 @@
  * $Id$
  * --------------------------------------------------------------------------
  */
-package org.ow2.jonas.jpaas.database.manager;
+package org.ow2.jonas.jpaas.database.manager.bean;
 
 import org.ow2.jonas.jpaas.database.manager.api.DatabaseManagerBeanException;
 import org.ow2.jonas.jpaas.database.manager.api.DatabaseManagerLocal;
