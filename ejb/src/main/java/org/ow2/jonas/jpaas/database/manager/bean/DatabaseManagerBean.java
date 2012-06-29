@@ -24,18 +24,17 @@
  */
 package org.ow2.jonas.jpaas.database.manager.bean;
 
+import org.ow2.jonas.jpaas.database.manager.api.DatabaseManager;
 import org.ow2.jonas.jpaas.database.manager.api.DatabaseManagerBeanException;
-import org.ow2.jonas.jpaas.database.manager.api.DatabaseManagerLocal;
-import org.ow2.jonas.jpaas.database.manager.api.DatabaseManagerRemote;
 
 import javax.ejb.Local;
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
 @Stateless(mappedName="DatabaseManagerBean")
-@Local(DatabaseManagerLocal.class)
-@Remote(DatabaseManagerRemote.class)
-public class DatabaseManagerBean {
+@Local(DatabaseManager.class)
+@Remote(DatabaseManager.class)
+public class DatabaseManagerBean implements DatabaseManager {
 
   public DatabaseManagerBean() {
   }

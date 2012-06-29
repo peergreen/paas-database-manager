@@ -25,7 +25,7 @@
 package org.ow2.jonas.jpaas.database.manager.api;
 
 
-public interface DatabaseManagerLocal {
+public interface DatabaseManager {
 
 
 
