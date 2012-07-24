@@ -27,7 +27,7 @@ package org.ow2.jonas.jpaas.database.manager.api;
 
 public interface DatabaseManager {
 
-
+    void createDatabase(String dbName, String paasAgentName, String paasConfigurationName, Integer portRange) throws DatabaseManagerBeanException;
 
 }
 
